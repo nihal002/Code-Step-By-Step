@@ -22,5 +22,5 @@ export class AppComponent {
     this.disable = this.disable==false?true:false;
     this.show = this.show==true?false:true;
   }
-  color = 'red';
+  color = 'green';
 }
