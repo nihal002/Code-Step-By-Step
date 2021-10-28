@@ -15,8 +15,12 @@ export class AppComponent {
   getevent(evt){
     console.log(evt);
   }
+  show = true;
+  ss="yes";
   disable = true;
   enableBox(){
     this.disable = this.disable==false?true:false;
+    this.show = this.show==true?false:true;
   }
+  
 }

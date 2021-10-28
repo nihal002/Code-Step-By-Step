@@ -1,4 +1,4 @@
-<h1>Code step by step</h1>
+<!-- <h1>Code step by step</h1>
 <app-login></app-login>
 <app-signup></app-signup>
 
@@ -25,4 +25,45 @@
 <!-- interpolation -->
 <input type="text" disabled={{disable}} value={{name}}>
 <br><br>
-<button (click)="enableBox()">Enable text box</button>
+<button (click)="enableBox()">Enable text box</button> -->
+
+
+<!-- If condition -->
+<h1 *ngIf="show else elseblock">
+    Hello If 
+</h1>
+
+<!-- else condition -->
+<ng-template #elseblock>
+    <h1>Hello else</h1>
+</ng-template>
+
+
+<!-- If condition with string variable verification-->
+<h1 *ngIf="ss=='yes' else elseblock">
+   string check Hello If 
+</h1>
+
+<!-- else condition -->
+<ng-template #elseblock>
+    <h1>Hello else</h1>
+</ng-template>
+
+<!--  -->
+<h1 *ngIf="ss=='yes'; then ifBlock else elseblock"></h1>
+
+<!-- If condition -->
+<ng-template #ifBlock>
+    <h1>
+        Hello If Block
+    </h1>
+</ng-template>
+
+<!-- else condition -->
+<ng-template #elseblock>
+    <h1>Hello else</h1>
+</ng-template>
+
+
+
+
