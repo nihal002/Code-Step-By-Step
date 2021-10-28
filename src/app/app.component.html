@@ -1,1 +1,28 @@
 <h1>Code step by step</h1>
+<app-login></app-login>
+<app-signup></app-signup>
+
+<button (click)="getclick('Nihal')">click me</button>
+<br><br>
+<button (click)="getevent('Hello')">get event</button>
+<br><br>
+<input type="text" name="" #box (keyup.enter)="getevent(box.value)">
+<br><br>
+<input type="text" name="" #box (keydown.enter)="getevent(box.value)">
+<br><br>
+<input type="text" name=""  (blur)="getevent('blur')">
+<br><br>
+<div (mouseover)="getevent('mouse over')" (mouseleave)="getevent('mouse leave')" bg-red>
+    mouse events
+</div>
+<br><br>
+
+
+
+<!-- property binding -->
+<input type="text" [disabled]="disable" [value]="name">
+<br><br>
+<!-- interpolation -->
+<input type="text" disabled={{disable}} value={{name}}>
+<br><br>
+<button (click)="enableBox()">Enable text box</button>

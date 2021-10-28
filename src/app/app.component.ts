@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'csbs';
+  name = "nihal";
+  getclick(name )
+  {
+    alert(name);
+  }
+  getevent(evt){
+    console.log(evt);
+  }
+  disable = true;
+  enableBox(){
+    this.disable = this.disable==false?true:false;
+  }
 }
