@@ -16,8 +16,7 @@
     mouse events
 </div>
 <br><br>
-
-
+ -->
 
 <!-- property binding -->
 <input type="text" [disabled]="disable" [value]="name">
@@ -62,6 +61,28 @@
 <!-- else condition -->
 <ng-template #elseblock>
     <h1>Hello else</h1>
+</ng-template>
+
+
+
+
+<!--  -->
+<!--  -->
+
+<ng-template [ngIf]="color=='red'">
+    <div style="background-color: red;">
+        Red Block
+    </div>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+    <div style="background-color: green;">
+        Green Block
+    </div>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+    <div style="background-color: blue;">
+        Blue Block
+    </div>
 </ng-template>
 
 
