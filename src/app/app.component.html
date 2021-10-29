@@ -111,7 +111,7 @@ If condition
  -->
 
 
-<!-- switch case -->
+<!-- switch case 
 
 <h1>Switch case in Angular</h1>
 
@@ -126,3 +126,25 @@ If condition
         GREEN
 </p>
 </span>
+
+
+ -->
+
+ <td *ngFor="let item of items">
+    {{item  }}
+ </td>
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let item of data">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+</table>
+
+ <!-- <h2 *ngFor="let item of data">
+     {{item.name}}
+ </h2> -->

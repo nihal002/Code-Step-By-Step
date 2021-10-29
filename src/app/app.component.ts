@@ -23,4 +23,15 @@ export class AppComponent {
     this.show = this.show==true?false:true;
   }
   color = 'green';
+
+  items = ['nihal','shivam','aniket','amit','prakhar']
+  data = [{
+    name:'nihal',
+    age:20
+  },
+  {
+    name:'sanjana',
+    age:21
+  }
+]
 }
